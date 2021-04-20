@@ -11,7 +11,7 @@ from matplotlib import pyplot as plt
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 # load the image and resize it
-image = cv2.imread("./macron.jpg", cv2.IMREAD_COLOR)
+image = cv2.imread("./people.jpg", cv2.IMREAD_COLOR)
 resized_image = imutils.resize(image, width=min(400, image.shape[1]))
 
 # detect people in the image
